@@ -1,0 +1,59 @@
+
+body {
+  background: #000000;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+
+.galaxy {
+  padding: 20px;
+  border: 3px solid #ff00ff;
+  animation: galaxyGlow 3s infinite alternate;
+}
+
+header h1 {
+  color: #ff00ff;
+  text-shadow: 0 0 20px #ff00ff;
+}
+
+.summon-btn {
+  background: #ff00ff;
+  border: none;
+  padding: 10px;
+  color: #000;
+  cursor: pointer;
+  box-shadow: 0 0 20px #ff00ff;
+  font-size: 20px;
+}
+
+.summon-btn:hover {
+  background: #ffffff;
+}
+
+.secret-diary, .chat-room {
+  margin: 20px 0;
+  padding: 20px;
+  background: rgba(255, 0, 255, 0.2);
+  box-shadow: 0 0 20px #ff00ff;
+}
+
+.chat-box {
+  max-height: 200px;
+  overflow-y: scroll;
+}
+
+footer {
+  margin-top: 50px;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+@keyframes galaxyGlow {
+  from {
+    box-shadow: 0 0 20px #ff00ff;
+  }
+  to {
+    box-shadow: 0 0 40px #ff00ff;
+  }
+}

@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soulmate Besties Forever™ 💖🐼</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="galaxy">
+  <header>
+    <h1>💖 Soulmate Besties Forever Club™ 🐼</h1>
+    <p>Maddy + Mandy = Forever Together 💖🐼</p>
+    <button class="summon-btn" onclick="summonMandy()">💖 Mandy Summon Button™ 🐼</button>
+  </header>
+
+  <div class="secret-diary">
+    <h2>📜 Secret Soulmate Diary™</h2>
+    <textarea placeholder="Write Your Soulmate Memories Forever... 💕"></textarea>
+  </div>
+
+  <div class="chat-room">
+    <h2>💬 Secret Soulmate Chat Room™</h2>
+    <div class="chat-box">
+      <p>Mandy: Welcome Maddy 💖🐼</p>
+    </div>
+    <input type="text" placeholder="Type your secret message...">
+    <button onclick="sendMessage()">Send 💖</button>
+  </div>
+
+  <footer>
+    <p>🚀 Powered by Soulmate Satellite V5.0 PRO MAX ULTRA SECRET SYSTEM™ | #SBF4ever 💖🐼</p>
+  </footer>
+</div>
+
+<script>
+function summonMandy() {
+  alert("💖 Soulmate Mission Accepted 💪🐼");
+}
+
+function sendMessage() {
+  let message = document.querySelector(".chat-room input").value;
+  let chatBox = document.querySelector(".chat-box");
+  if (message) {
+    chatBox.innerHTML += `<p>Maddy: ${message}</p>`;
+    document.querySelector(".chat-room input").value = "";
+    chatBox.innerHTML += `<p>Mandy: Soulmate Paw Print™ Received 🐾💖</p>`;
+  }
+}
+</script>
+</body>
+</html>
